@@ -19,7 +19,7 @@ const getAuth = createServerFn({ method: "GET" }).handler(async () => {
 	return await getToken();
 });
 
-import Header from "../components/Header";
+// import Header from "../components/Header";
 
 import appCss from "../styles.css?url";
 
@@ -81,12 +81,12 @@ function RootComponent() {
 
 function RootDocument({ children }: { children: React.ReactNode }) {
 	return (
-		<html lang="en" suppressHydrationWarning>
+		<html lang="en">
 			<head>
 				<HeadContent />
 			</head>
 			<body>
-				<Header />
+				{/* <Header /> */}
 				{children}
 				<TanStackDevtools
 					config={{
