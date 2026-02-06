@@ -19,8 +19,6 @@ const getAuth = createServerFn({ method: "GET" }).handler(async () => {
 	return await getToken();
 });
 
-import Header from "../components/Header";
-
 import appCss from "../styles.css?url";
 
 export const Route = createRootRouteWithContext<{
@@ -86,7 +84,6 @@ function RootDocument({ children }: { children: React.ReactNode }) {
 				<HeadContent />
 			</head>
 			<body>
-				<Header />
 				{children}
 				<TanStackDevtools
 					config={{
